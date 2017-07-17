@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "muratayusuke <info@muratayusuke.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server"
+  },
   "dependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
