@@ -1,27 +1,29 @@
-var publidDir = __dirname + '/public';
+const path = require('path');
+
+const publidDir = path.join(__dirname, '/public');
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/index.js',
   ],
   output: {
     path: publidDir,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     loaders: [{
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'es2015']
-      }
-    }]
+        presets: ['react', 'es2015'],
+      },
+    }],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: publidDir
-  }
+    contentBase: publidDir,
+  },
 };

@@ -1,1 +1,1 @@
-alert("Hello ES2015!");
+alert('Hello ES2015!');
