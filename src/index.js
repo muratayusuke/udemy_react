@@ -1,4 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(pug`div Hello pug!!!`, document.querySelector('.container'));
+import App from './components/app';
+
+ReactDOM.render(pug`App`, document.querySelector('.container'));
