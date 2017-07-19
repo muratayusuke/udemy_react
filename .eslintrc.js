@@ -1,3 +1,15 @@
 module.exports = {
-    "extends": "airbnb"
+  "extends": "airbnb",
+  "globals": {
+    "document": true,
+    "pug": true
+  },
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": ".*"
+      }
+    ]
+  }
 };
