@@ -1,4 +1,4 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(pug`div Hello pug!!!`, document.querySelector('.container'));
+ReactDOM.render(<div>Hello React!!!</div>, document.querySelector('.container'));

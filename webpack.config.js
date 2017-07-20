@@ -18,10 +18,6 @@ module.exports = [
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015'],
-          plugins: [
-            'transform-react-pug',
-            'transform-react-jsx',
-          ],
         },
       }],
     },
