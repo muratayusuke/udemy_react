@@ -15,6 +15,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^3.0.0",
+    "geolib": "^2.0.22",
     "import-glob-loader": "^1.1.0",
     "node-sass": "^4.5.3",
     "prop-types": "^15.5.10",
