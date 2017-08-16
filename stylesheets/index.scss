@@ -1,9 +1,11 @@
 $background-color: #eee;
 $text-color: #444;
+$base-margin: 40px;
 
 body {
   background-color: $background-color;
   color: $text-color;
+  margin: 0;
 }
 
 @import 'reset';
