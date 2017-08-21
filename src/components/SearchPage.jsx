@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import _ from 'lodash';
 
 import SearchForm from './SearchForm';
@@ -34,6 +35,7 @@ class SearchPage extends Component {
   }
 
   handlePlaceSubmit(place) {
+    this.props.history.push(`/?query=${place}`);
     geocode(place)
       .then(({ status, address, location }) => {
         switch (status) {
@@ -90,5 +92,9 @@ class SearchPage extends Component {
     );
   }
 }
+
+SearchPage.propTypes = {
+  history: PropTypes.shape({ push: PropTypes.func }).isRequired,
+};
 
 export default SearchPage;
