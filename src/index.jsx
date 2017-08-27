@@ -7,8 +7,13 @@ import { Provider } from 'react-redux';
 import SearchPage from './components/SearchPage';
 import reducer from './reducers/';
 
+const store = createStore(
+  reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
+
 ReactDOM.render(
-  <Provider store={createStore(reducer)}>
+  <Provider store={store}>
     <SearchPage
       history={history}
       location={location}
