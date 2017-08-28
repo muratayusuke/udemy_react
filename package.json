@@ -28,6 +28,8 @@
     "react-router-dom": "^4.1.2",
     "redux": "^3.7.2",
     "redux-devtools": "^3.4.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
